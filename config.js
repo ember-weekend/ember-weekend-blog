@@ -41,11 +41,12 @@ config = {
     url: process.env.HEROKU_URL,
     mail: {
       transport: 'SMTP',
+      from: '"Ember Weekend Blog" <blog@emberweekend.com>',
       options: {
-        service: 'Mailgun',
+        service: process.env.MAIL_SERVICE,
         auth: {
-          user: process.env.MAILGUN_SMTP_LOGIN,
-          pass: process.env.MAILGUN_SMTP_PASSWORD
+          user: process.env.SMTP_LOGIN,
+          pass: process.env.SMTP_PASSWORD
         }
       }
     },
