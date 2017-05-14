@@ -41,6 +41,61 @@ http {
 
             location /blog/ {
 
+                location ~* /0d3d77e8f6 {
+                    rewrite ^ /2015/11/10/this-dot-inject-rocks/ last;
+                }
+                location ~* /9561e7b12e {
+                    rewrite ^ /2015/11/02/this-dot-register-rocks/ last;
+                }
+                location ~* /933848db54 {
+                    rewrite ^ /2015/10/28/fastboot-proofing-your-ember-addons/ last;
+                }
+                location ~* /059199c7d4 {
+                    rewrite ^ /2015/10/25/module-imports-in-embercli/ last;
+                }
+                location ~* /851fb1e6f7 {
+                    rewrite ^ /2015/10/22/wait-helper-in-integration-tests/ last;
+                }
+                location ~* /faef1058c3 {
+                    rewrite ^ /2015/10/20/inheriting-from-linkcomponent-in-ember-is-amazing/ last;
+                }
+                location ~* /d85a160f10 {
+                    rewrite ^ /2015/10/14/ember-truth-helpers-and-htmlbars-sub-expressions/ last;
+                }
+                location ~* /dc22a1be25 {
+                    rewrite ^ /2015/10/13/lets-talk-about-embers-mut-htmlbars-helper/ last;
+                }
+                location ~* /0ac953d2b9 {
+                    rewrite ^ /2015/10/12/yielded-closure-actions-as-an-api-for-a-component/ last;
+                }
+                location ~* /1b47c992eb {
+                    rewrite ^ /2016/09/16/migrate-from-mysql-to-postgres/ last;
+                }
+                location ~* /3fc396bee6 {
+                    rewrite ^ /2016/06/27/testem-supports-parallel-execution/ last;
+                }
+                location ~* /35ebbb758a {
+                    rewrite ^ /2016/01/20/how-to-test-facebook-login-with-ember-torii/ last;
+                }
+                location ~* /b4c0e5d1a4 {
+                    rewrite ^ /2016/01/18/cant-find-variable-symbol/ last;
+                }
+                location ~* /d7bf68f89a {
+                    rewrite ^ /2015/12/15/how-to-donate-to-charity-for-free/ last;
+                }
+                location ~* /d1aff13969 {
+                    rewrite ^ /2015/11/01/the-difference-between-rooturl-and-baseurl/ last;
+                }
+                location ~* /1b5bd81fda {
+                    rewrite ^ /2015/11/01/the-pitfalls-of-rooturl-and-baseurl/ last;
+                }
+                location ~* /e26522c10c {
+                    rewrite ^ /2015/10/27/how-to-remove-newly-git-ignored-files/ last;
+                }
+                location ~* /da277635d1 {
+                    rewrite ^ /2015/10/21/force-ember-data-to-skip-cache-with-reload-true/ last;
+                }
+
                 location ~ /amp$ {
                     rewrite ^(.*)$ $1/ last;
                 }
